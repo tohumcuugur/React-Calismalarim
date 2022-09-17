@@ -26,12 +26,12 @@ function App() {
       {/* <h1>{isLoggedIn ? `Benim adım ${name} soyadım ${surname}` :"Giriş yapmadınız"}</h1> */}
 
       <User 
-        name = "ugur" 
+        name = {"ugur"} 
         surname="tohumcu" 
         isLoggedIn = {true}
         age={26}
         // friends ={["Ali" ,"Mehmet" ,"Ercüment" , "Ayşe" ,"Fatma"]}
-        friends = {friends}
+        // friends = {friends}
       />
     </div>
   ) 
