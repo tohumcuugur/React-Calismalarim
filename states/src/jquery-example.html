@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>0</h1>
+    <button>Increase</button>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    // Bu deneme jquery ve react arasındaki farkı görmek için yapıldı.
+    // Jquery'de değeri 1 verdikten sonrada increase butonuna bastığımızda 1 olan kısım yeniden render edilir.
+    // Fakat react'te 1 kere butona tıklayınca sanal dom 1 olduğu için tekrar basınca kontrolü yapılır ve aynı değer olduğu için real dom'a yazılmaz
+    $(() =>{
+        $("button").on("click",()=>{
+            $("h1").html(1);
+        });
+    })
+</script>
+</html>
