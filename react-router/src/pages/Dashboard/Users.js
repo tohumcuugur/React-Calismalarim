@@ -19,7 +19,7 @@ function Users() {
             {
                 users.map((user , index)=> (
                     <li key={index}>
-                        <Link to={`${index+1}`}>{index+1}-{user.name}</Link>
+                        <Link to={`${index+1}`} state={{user}}>{index+1}-{user.name}</Link>
                     </li>
                 ))
             }
